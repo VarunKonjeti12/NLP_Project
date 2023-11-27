@@ -5,7 +5,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk import pos_tag, ne_chunk
-from transformers import BertTokenizer
+from transformers import BertTokenizer # If we are using BERT Model
 from sklearn.model_selection import train_test_split
 
 # Sample dataset
