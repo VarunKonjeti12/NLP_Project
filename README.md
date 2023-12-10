@@ -17,6 +17,7 @@ The above are the requirments of versions of libraries that you should have to r
 And you need to have a active internet to download some pretrained models that are used in the code.
 
 ## Conclusion
-This is one of the basic approach of integrating text summarization, key word extraction, aspect based sentiment analysis.
+This is one of the basic approach of integrating text summarization, key word extraction, aspect based sentiment analysis.This prototype can help many users in saving many resources like time and money as it significantly reduces the time used by users to read long reviews and in most of the cases it helps people take wise decisions on choosing the product.
 
- 
+ ## Future Work
+We haven't used any domain specific dataset for our prototype. So in future we will create our own dataset which boosts our prototype performance and we also use the dataset to tune the parameters of our pre-trained models.
