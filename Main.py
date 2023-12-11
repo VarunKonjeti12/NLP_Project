@@ -103,3 +103,24 @@ def aspect_sentiment_analysis(txt, stop_words, nlp):
 
 nlp = stanza.Pipeline()
 stop_words = set(stopwords.words('english'))
+
+# Can be softcoded so that user can enter their specific required review below given is sample review by our group 
+Product_Review = """
+The new smartphone is fantastic. The camera quality is excellent, capturing sharp and clear photos. 
+The battery life exceeds expectations, lasting all day with regular use. 
+The sleek design and vibrant display make it a pleasure to use. However,it has high price.
+"""
+
+#Original_Review
+print("Original Review:\n", Product_Review)
+summary = text_summarization(Product_Review)
+#Summary
+print("\nGenerated Summary:\n", summary)
+# Extracting deduplicated keywords
+keywords = extract_keywords(Product_Review)
+print()
+# Printing the keywords
+print("Keywords:", keywords)
+# Printing the aspects 
+print()
+print(aspect_sentiment_analysis(Product_Review, stop_words, nlp))
